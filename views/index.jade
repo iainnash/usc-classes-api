@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p Routes:
+  pre
+    ul
+      li 
+        a(href='/classes/EE') /classes/EE 
+        span # get all EE section classes (search)
+      li 
+        a(href='/classes/201') /classes/201
+        span  # get all 201 section classes (search)
+      li 
+        a(href='/class/EE-201') /class/EE-201
+        span  # get a class info
+      li 
+        a(href='/departments') /departments
+        span  # list departments
+      li 
+        a(href='/department/EE') /department/EE
+        span  # ee dept classes
+      li 
+        a(href='/classes/') /classes/
+        span  # list classes 
